@@ -1,0 +1,28 @@
+@import "./colors/colors_imports.scss";
+
+@mixin text-style($color, $font-size, $font-family) {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+}
+
+.texts {
+  h1 {
+    //Sem o mixin
+    // color: #ff4043;
+    // font-size: 34px;
+    // font-family: arial;
+
+    //Com o mixin
+    @include text-style($primary-color, 34px, arial);
+  }
+  p {
+    //Sem mixin
+    // color: blue;
+    // font-size: 22px;
+    // font-family: sans-serif;
+
+    //Com mixin
+    @include text-style(blue, 22px, sans-serif);
+  }
+}
