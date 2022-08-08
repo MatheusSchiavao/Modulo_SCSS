@@ -1,0 +1,5 @@
+//Dá o acesso ao SCSS até o Css
+sass --watch sass/nome_pg.scss:css/nome_pg.css
+
+//Compressa o código de CSS em uma linha
+sass sass/nome_pg.scss:css/nome_pg.css --style compressed
